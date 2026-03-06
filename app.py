@@ -89,7 +89,7 @@ def load_model(path):
         return pickle.load(f)
 
 def get_model():
-    path = "churn_complete_model.pkl"
+    path = "churn_model.pkl"
     if not os.path.exists(path):
         return None, f"Model file '{path}' not found."
     try:
